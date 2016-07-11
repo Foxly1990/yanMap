@@ -12,22 +12,23 @@ API карт. Для работы требуется jQuery. Умеет рабо
 свою собственную иконку...
 
 Для подключения:
+
+```
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="yanmap.v0.2.js"></script>
-
-Первое это библиотека jQuery
-Второе это библиотека Yandex API Map
-Третье это сама надстройка
-
+```
 Доступные параметры
 
 startGeoPoint
     Тип: Object
-    Значение по-умолчанию: {
+    Значение по-умолчанию: 
+    
+    {
         center: [54.865232, 37.207378], 
         zoom: 8
     }
+
     Описание: устанавливает центр карты
     Дочерние объекты:
         center
