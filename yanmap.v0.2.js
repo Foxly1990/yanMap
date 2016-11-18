@@ -49,6 +49,22 @@ if (typeof Object.create !== "function") {
         // Remove and add new Set ()
         myUniqueArr: function (array, condition) {
             var self = this,
+                result;
+            
+            switch (condition) {
+            case true:
+                result = new Set(array);
+                break;
+            default:
+                result = array;
+                break;
+            }
+            
+            return result;
+        },
+        
+        myUniqueArrTest: function (array, condition) {
+            var self = this,
                 result = [];
 
             switch (condition) {
