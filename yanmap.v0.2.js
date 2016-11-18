@@ -46,6 +46,7 @@ if (typeof Object.create !== "function") {
         /* Здесь располагаются дополнительные свойства */
         
         // Создаём новый массив с уникальными значениями
+        // Remove and add new Set ()
         myUniqueArr: function (array, condition) {
             var self = this,
                 result = [];
@@ -144,6 +145,7 @@ if (typeof Object.create !== "function") {
             isUnique = self.settings.fill.unique;
             isSortByAlph = self.settings.fill.sort;
             
+            //For unique values need to use new Set()
             procArr = self.myUniqueArr(arr, isUnique);
             procArr = self.mySortByAlphabet(procArr, isSortByAlph);
             procArr = self.mySetFirstElem(procArr, toFirst);
