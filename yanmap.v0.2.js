@@ -53,7 +53,7 @@ if (typeof Object.create !== "function") {
             
             switch (condition) {
             case true:
-                result = new Set(array);
+                result = Array.from(new Set(array));
                 break;
             default:
                 result = array;
